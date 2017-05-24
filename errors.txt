@@ -1,0 +1,43 @@
+/home/jay/Dropbox/Projects/learn/udacity/nanodegree_self_driving/term_2/PID-Control-Project/src/main.cpp: In function ‘int main()’:
+/home/jay/Dropbox/Projects/learn/udacity/nanodegree_self_driving/term_2/PID-Control-Project/src/main.cpp:77:4: error: no matching function for call to ‘uWS::Hub::onMessage(main()::<lambda(uWS::WebSocket<true>, char*, size_t, uWS::OpCode)>)’
+   });
+    ^
+In file included from /usr/local/include/uWS/Hub.h:4:0,
+                 from /usr/local/include/uWS/uWS.h:4,
+                 from /home/jay/Dropbox/Projects/learn/udacity/nanodegree_self_driving/term_2/PID-Control-Project/src/main.cpp:1:
+/usr/local/include/uWS/Group.h:69:10: note: candidate: void uWS::Group<isServer>::onMessage(std::function<void(uWS::WebSocket<isServer>*, char*, long unsigned int, uWS::OpCode)>) [with bool isServer = true]
+     void onMessage(std::function<void(WebSocket<isServer> *, char *, size_t, OpCode)
+          ^
+/usr/local/include/uWS/Group.h:69:10: note:   no known conversion for argument 1 from ‘main()::<lambda(uWS::WebSocket<true>, char*, size_t, uWS::OpCode)>’ to ‘std::function<void(uWS::WebSocket<true>*, char*, long unsigned int, uWS::OpCode)>’
+/usr/local/include/uWS/Group.h:69:10: note: candidate: void uWS::Group<isServer>::onMessage(std::function<void(uWS::WebSocket<isServer>*, char*, long unsigned int, uWS::OpCode)>) [with bool isServer = false]
+/usr/local/include/uWS/Group.h:69:10: note:   no known conversion for argument 1 from ‘main()::<lambda(uWS::WebSocket<true>, char*, size_t, uWS::OpCode)>’ to ‘std::function<void(uWS::WebSocket<false>*, char*, long unsigned int, uWS::OpCode)>’
+/home/jay/Dropbox/Projects/learn/udacity/nanodegree_self_driving/term_2/PID-Control-Project/src/main.cpp:96:4: error: no matching function for call to ‘uWS::Hub::onConnection(main()::<lambda(uWS::WebSocket<true>, uWS::HttpRequest)>)’
+   });
+    ^
+In file included from /usr/local/include/uWS/Hub.h:4:0,
+                 from /usr/local/include/uWS/uWS.h:4,
+                 from /home/jay/Dropbox/Projects/learn/udacity/nanodegree_self_driving/term_2/PID-Control-Project/src/main.cpp:1:
+/usr/local/include/uWS/Group.h:67:10: note: candidate: void uWS::Group<isServer>::onConnection(std::function<void(uWS::WebSocket<isServer>*, uWS::HttpRequest)>) [with bool isServer = true]
+     void onConnection(std::function<void(WebSocket<isServer> *, HttpRequest)> handle
+          ^
+/usr/local/include/uWS/Group.h:67:10: note:   no known conversion for argument 1 from ‘main()::<lambda(uWS::WebSocket<true>, uWS::HttpRequest)>’ to ‘std::function<void(uWS::WebSocket<true>*, uWS::HttpRequest)>’
+/usr/local/include/uWS/Group.h:67:10: note: candidate: void uWS::Group<isServer>::onConnection(std::function<void(uWS::WebSocket<isServer>*, uWS::HttpRequest)>) [with bool isServer = false]
+/usr/local/include/uWS/Group.h:67:10: note:   no known conversion for argument 1 from ‘main()::<lambda(uWS::WebSocket<true>, uWS::HttpRequest)>’ to ‘std::function<void(uWS::WebSocket<false>*, uWS::HttpRequest)>’
+/home/jay/Dropbox/Projects/learn/udacity/nanodegree_self_driving/term_2/PID-Control-Project/src/main.cpp:101:4: error: no matching function for call to ‘uWS::Hub::onDisconnection(main()::<lambda(uWS::WebSocket<true>, int, char*, size_t)>)’
+   });
+    ^
+In file included from /usr/local/include/uWS/Hub.h:4:0,
+                 from /usr/local/include/uWS/uWS.h:4,
+                 from /home/jay/Dropbox/Projects/learn/udacity/nanodegree_self_driving/term_2/PID-Control-Project/src/main.cpp:1:
+/usr/local/include/uWS/Group.h:70:10: note: candidate: void uWS::Group<isServer>::onDisconnection(std::function<void(uWS::WebSocket<isServer>*, int, char*, long unsigned int)>) [with bool isServer = true]
+     void onDisconnection(std::function<void(WebSocket<isServer> *, int code, char *m
+          ^
+/usr/local/include/uWS/Group.h:70:10: note:   no known conversion for argument 1 from ‘main()::<lambda(uWS::WebSocket<true>, int, char*, size_t)>’ to ‘std::function<void(uWS::WebSocket<true>*, int, char*, long unsigned int)>’
+/usr/local/include/uWS/Group.h:70:10: note: candidate: void uWS::Group<isServer>::onDisconnection(std::function<void(uWS::WebSocket<isServer>*, int, char*, long unsigned int)>) [with bool isServer = false]
+/usr/local/include/uWS/Group.h:70:10: note:   no known conversion for argument 1 from ‘main()::<lambda(uWS::WebSocket<true>, int, char*, size_t)>’ to ‘std::function<void(uWS::WebSocket<false>*, int, char*, long unsigned int)>’
+CMakeFiles/pid.dir/build.make:86: recipe for target 'CMakeFiles/pid.dir/src/main.cpp.o' failed
+make[2]: *** [CMakeFiles/pid.dir/src/main.cpp.o] Error 1
+CMakeFiles/Makefile2:67: recipe for target 'CMakeFiles/pid.dir/all' failed
+make[1]: *** [CMakeFiles/pid.dir/all] Error 2
+Makefile:83: recipe for target 'all' failed
+make: *** [all] Error 2
