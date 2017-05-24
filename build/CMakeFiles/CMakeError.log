@@ -1,0 +1,21 @@
+Detecting CXX compiler ABI info failed to compile with the following output:
+Change Dir: C:/Users/teguh/Dropbox/Projects/learn/udacity/nanodegree_self_driving/term_2/PID-Control-Project/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MingW/bin/mingw32-make.exe" "cmTC_0f70c/fast"
+C:/MingW/bin/mingw32-make.exe -f CMakeFiles\cmTC_0f70c.dir\build.make CMakeFiles/cmTC_0f70c.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/teguh/Dropbox/Projects/learn/udacity/nanodegree_self_driving/term_2/PID-Control-Project/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_0f70c.dir/CMakeCXXCompilerABI.cpp.obj
+C:\MingW\bin\g++.exe     -o CMakeFiles\cmTC_0f70c.dir\CMakeCXXCompilerABI.cpp.obj -c "C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeCXXCompilerABI.cpp"
+Linking CXX executable cmTC_0f70c.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_0f70c.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_0f70c.dir/objects.a
+C:\MingW\bin\ar.exe cr CMakeFiles\cmTC_0f70c.dir/objects.a @CMakeFiles\cmTC_0f70c.dir\objects1.rsp
+C:\MingW\bin\ar.exe: unable to rename 'CMakeFiles\cmTC_0f70c.dir/objects.a'; reason: File exists
+CMakeFiles\cmTC_0f70c.dir\build.make:97: recipe for target 'cmTC_0f70c.exe' failed
+mingw32-make.exe[1]: *** [cmTC_0f70c.exe] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/teguh/Dropbox/Projects/learn/udacity/nanodegree_self_driving/term_2/PID-Control-Project/build/CMakeFiles/CMakeTmp'
+Makefile:125: recipe for target 'cmTC_0f70c/fast' failed
+mingw32-make.exe: *** [cmTC_0f70c/fast] Error 2
+
+
+
