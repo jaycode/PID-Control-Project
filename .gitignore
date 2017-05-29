@@ -1,4 +1,11 @@
+<<<<<<< HEAD
 .vscode
 build
 tags
 .editorconfig
+=======
+.vscode
+# build
+tags
+.editorconfig
+>>>>>>> 51557f96d9d54279eeabf0caf8339a6cf3282a49
