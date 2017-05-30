@@ -34,7 +34,7 @@ int main()
 
   PID pid;
   // Initialize the pid variable.
-  pid.Init(0.12, 0.04, 0.9);
+  pid.Init(0.15, 0.01, 0.4);
 
   // P effect: Throttle backward on large (10) value.
   // I effect: Throttle backward on large (10) value.

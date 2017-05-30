@@ -35,6 +35,8 @@ In my implementation, the P component gives an initial gain, which would then be
 
 Setting P to `0.12` accompanied by D to `0.9` resulted in a decent result, but the car was oscillating wildly. I then added a scaling factor to both P and D results based on the current speed of the car.
 
+As it turned out, the car made a wrong turn after it ran for awhile, updating the P, I, D, to respectively 0.15, 0.01, and 0.4 had corrected this. A problem that still persists is the car at one occassion passed the right border, but overall it runs quite smoothly.
+
 ### Choosing Hyperparameters
 
 Initially, I tried using a Twiddle algorithm that would try out different values of P, I, and D, as shown in the `main-twiddle.cpp`. This method did not work for this particular problem, however, since there is currently no way to reset the simulation which is required by the algorithm. I then manually adjusted the parameters until I found a workable solution, which I then adjusted with the car's normalized speed factor.
